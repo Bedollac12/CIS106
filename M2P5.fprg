@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-10 12:50:59 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1MMzlHMDk7MjAyNi0wMy0xMDsxMjozODowMCBQTTszMjg0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1MMzlHMDk7MjAyNi0wMy0xMDsxMjo1MDo1OSBQTTsxOzM0MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="discountamount" type="Real" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <input variable="price"/>
+            <input variable="discountpercent"/>
+            <assign variable="discountamount" expression="price * discountpercent"/>
+            <assign variable="discountedprice" expression="price - discountamount"/>
+            <output expression="&quot;Discount amount: &quot; &amp; discountamount" newline="True"/>
+            <output expression="&quot;Discounted price: &quot; &amp; discountedprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
